@@ -1,0 +1,43 @@
+.aside {
+    --tw-bg-opacity: 1;
+    background-color: rgba(31,41,55,var(--tw-bg-opacity));
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -15rem;
+    width: 15rem;
+    z-index: 40;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: 150ms;
+}
+
+.aside-tools {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17,24,39,var(--tw-bg-opacity));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 1 0%;
+    height: 3.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    width: 100%;
+}
+
+.menu-label {
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: 0.75rem;
+    --tw-text-opacity: 1;
+    color: rgba(156,163,175,var(--tw-text-opacity));
+    text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+    .aside {
+        left: 0;
+    }
+}
